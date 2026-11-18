@@ -16,6 +16,38 @@
 .contact-line a{color:white;direction:ltr;unicode-bidi:embed;word-break:break-all}.contact-line a:hover{color:var(--gold)}
 .contact-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.contact-links a{border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:9px 15px;font-size:13px;font-weight:700}.contact-links a:hover{border-color:var(--gold);color:var(--gold)}
 .topbar a{color:#d8dfeb;direction:ltr;unicode-bidi:embed}
+.disc [hidden]{display:none!important}
+.disc{background:linear-gradient(180deg,#fff,var(--cream))}
+.disc-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:44px;box-shadow:var(--shadow);max-width:960px}
+.disc-start{display:flex;flex-direction:column;gap:30px;align-items:flex-start}
+.disc-quads{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;width:100%}
+.q{border-radius:18px;padding:20px;color:#fff}.q b{display:block;font:44px Georgia,serif;line-height:1}.q span{font-size:13px;font-weight:700;opacity:.9}
+.q-d{background:#b4483a}.q-i{background:#c8a56a;color:var(--navy)}.q-s{background:#3f7d64}.q-c{background:#2f5597}
+.disc-top{display:flex;align-items:center;gap:16px;font-size:13px;color:var(--muted);font-weight:700}
+.disc-prog{flex:1;height:6px;border-radius:9px;background:#efebe3;overflow:hidden}.disc-prog i{display:block;height:100%;background:var(--gold);transition:width .35s;width:0}
+.disc-quiz h3{color:var(--navy);font-size:22px;margin:22px 0 18px}
+.disc-opts{display:grid;gap:12px}
+.disc-opt{text-align:start;border:1.5px solid var(--line);background:var(--cream);border-radius:16px;padding:16px 20px;font-size:15px;color:var(--ink);transition:.18s}
+.disc-opt:hover{border-color:var(--gold);background:#fff;transform:translateX(4px)}[dir="rtl"] .disc-opt:hover{transform:translateX(-4px)}
+.disc-opt.sel{border-color:var(--navy);background:var(--navy);color:#fff}
+.disc-back{margin-top:18px;background:none;border:0;color:var(--muted);font-weight:700;font-size:13px;padding:4px 0}
+.disc-back[disabled]{visibility:hidden}
+.disc-res-head{display:flex;gap:20px;align-items:center}
+.disc-badge{width:84px;height:84px;border-radius:24px;display:grid;place-items:center;font:46px Georgia,serif;color:#fff;flex:none}
+.disc-res-head small{color:#a47d43;font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:11px}
+.disc-res-head h3{margin:2px 0;color:var(--navy);font-size:28px}.disc-res-head p{margin:0;color:var(--muted)}
+.disc-bars{display:grid;gap:12px;margin:30px 0}
+.disc-row{display:grid;grid-template-columns:200px 1fr 48px;gap:12px;align-items:center;font-size:14px;font-weight:700;color:var(--navy)}
+.disc-track{height:12px;border-radius:9px;background:#efebe3;overflow:hidden}.disc-track i{display:block;height:100%;border-radius:9px;width:0;transition:width 1s cubic-bezier(.2,.8,.2,1)}
+.disc-row em{font-style:normal;text-align:end;color:var(--muted)}
+.disc-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.disc-cols>div{background:var(--cream);border-radius:18px;padding:20px}
+.disc-cols h4{margin:0 0 10px;color:var(--navy);font-size:15px}
+.disc-cols ul{margin:0;padding-inline-start:18px;color:#5d6878;font-size:14px;display:grid;gap:6px}
+.disc-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn-ghost-dark{background:transparent;border:1px solid var(--line);color:var(--navy)}
+.disc-note{font-size:12px;color:var(--muted);margin:18px 0 0}
+@media(max-width:640px){.disc-card{padding:24px}.disc-quads{grid-template-columns:repeat(2,1fr)}.disc-cols{grid-template-columns:1fr}.disc-row{grid-template-columns:110px 1fr 40px;font-size:13px}.disc-quiz h3{font-size:19px}}
 </style>
 </head>
 <body>
@@ -23,7 +55,7 @@
 <div class="nav-wrap"><nav class="container">
 <a class="brand" href="#home">MOHAMED MOKHTAR<span>CAREER COACH</span></a>
 <div class="nav-links" id="navLinks">
-<a href="#home" data-en="Home" data-ar="الرئيسية">Home</a><a href="#about" data-en="About" data-ar="من أنا">About</a><a href="#services" data-en="Services" data-ar="الخدمات">Services</a><a href="#approach" data-en="My Approach" data-ar="منهجيتي">My Approach</a><a href="https://kayancv.com" target="_blank" rel="noopener" data-en="KAYAN ↗" data-ar="كيان ↗">KAYAN ↗</a><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
+<a href="#home" data-en="Home" data-ar="الرئيسية">Home</a><a href="#about" data-en="About" data-ar="من أنا">About</a><a href="#services" data-en="Services" data-ar="الخدمات">Services</a><a href="#approach" data-en="My Approach" data-ar="منهجيتي">My Approach</a><a href="#disc" data-en="DISC Test" data-ar="اختبار DISC">DISC Test</a><a href="https://kayancv.com" target="_blank" rel="noopener" data-en="KAYAN ↗" data-ar="كيان ↗">KAYAN ↗</a><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
 </div>
 <div class="nav-actions"><button class="lang-btn" id="langBtn" type="button">العربية</button><button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu">☰</button></div>
 </nav></div>
@@ -69,6 +101,37 @@
 <div class="step"><b>02</b><h3 data-en="Get Clear" data-ar="نصل إلى الوضوح">Get Clear</h3><p data-en="Identify meaningful options and define what progress would look like for you." data-ar="نحدد الخيارات المناسبة ونوضح شكل التقدم الذي تريد الوصول إليه.">Identify meaningful options and define what progress would look like for you.</p></div>
 <div class="step"><b>03</b><h3 data-en="Take Action" data-ar="نبدأ التنفيذ">Take Action</h3><p data-en="Turn insight into practical next steps, experiments, and a plan you can own." data-ar="نحوّل ما توصلنا إليه إلى خطوات عملية وتجارب وخطة تستطيع الالتزام بها.">Turn insight into practical next steps, experiments, and a plan you can own.</p></div>
 </div></div></section>
+<section class="disc" id="disc"><div class="container">
+<div class="section-head"><div class="kicker" data-en="Free personality tool" data-ar="أداة مجانية لاكتشاف الشخصية">Free personality tool</div><h2 data-en="Discover your DISC style." data-ar="اكتشف نمط شخصيتك DISC.">Discover your DISC style.</h2><p data-en="12 quick questions, about 3 minutes. For each one, choose the statement that sounds most like you at work." data-ar="12 سؤال سريع في حوالي 3 دقائق. في كل سؤال اختر العبارة الأقرب لك في العمل.">12 quick questions, about 3 minutes. For each one, choose the statement that sounds most like you at work.</p></div>
+<div class="disc-card">
+  <div id="discStart" class="disc-start">
+    <div class="disc-quads">
+      <div class="q q-d"><b>D</b><span data-en="Dominance" data-ar="الحسم">Dominance</span></div>
+      <div class="q q-i"><b>I</b><span data-en="Influence" data-ar="التأثير">Influence</span></div>
+      <div class="q q-s"><b>S</b><span data-en="Steadiness" data-ar="الثبات">Steadiness</span></div>
+      <div class="q q-c"><b>C</b><span data-en="Conscientiousness" data-ar="الدقة">Conscientiousness</span></div>
+    </div>
+    <button class="btn btn-gold" id="discGo" type="button" data-en="Start the test →" data-ar="ابدأ الاختبار ←">Start the test →</button>
+  </div>
+  <div id="discQuiz" class="disc-quiz" hidden>
+    <div class="disc-top"><span id="discCount"></span><div class="disc-prog"><i id="discBar"></i></div></div>
+    <h3 id="discQ"></h3>
+    <div id="discOpts" class="disc-opts"></div>
+    <button class="disc-back" id="discBack" type="button" data-en="← Back" data-ar="→ رجوع">← Back</button>
+  </div>
+  <div id="discResult" class="disc-result" hidden>
+    <div class="disc-res-head"><div class="disc-badge" id="discLetter">D</div><div><small data-en="Your primary style" data-ar="نمطك الأساسي">Your primary style</small><h3 id="discName"></h3><p id="discTag"></p></div></div>
+    <div id="discBars" class="disc-bars"></div>
+    <div class="disc-cols">
+      <div><h4 data-en="Your strengths" data-ar="نقاط قوتك">Your strengths</h4><ul id="discStr"></ul></div>
+      <div><h4 data-en="Watch out for" data-ar="انتبه إلى">Watch out for</h4><ul id="discGrow"></ul></div>
+      <div><h4 data-en="Roles that often fit" data-ar="أدوار تناسبك غالباً">Roles that often fit</h4><ul id="discRoles"></ul></div>
+    </div>
+    <div class="disc-actions"><a class="btn btn-gold" id="discWa" href="#" target="_blank" rel="noopener" data-en="Discuss my result with Mohamed ↗" data-ar="ناقش نتيجتي مع محمد ↗">Discuss my result with Mohamed ↗</a><button class="btn btn-ghost-dark" id="discAgain" type="button" data-en="Retake the test" data-ar="أعد الاختبار">Retake the test</button></div>
+    <p class="disc-note" data-en="This is a short self-reflection tool based on the DISC model, not a certified assessment. Use it as a starting point for a coaching conversation." data-ar="هذه أداة قصيرة للتأمل الذاتي مبنية على نموذج DISC، وليست تقييماً معتمداً. استخدمها كبداية لجلسة كوتشنج.">This is a short self-reflection tool based on the DISC model, not a certified assessment. Use it as a starting point for a coaching conversation.</p>
+  </div>
+</div>
+</div></section>
 <section class="kayan" id="kayan"><div class="container">
 <div class="kayan-panel"><div><div class="kayan-logo">KA<span>Y</span>AN</div><div class="kicker" data-en="A career tool by Mohamed Mokhtar" data-ar="أداة مهنية من محمد مختار">A career tool by Mohamed Mokhtar</div><h2 data-en="Make your CV tell your value." data-ar="اجعل سيرتك الذاتية تعكس قيمتك.">Make your CV tell your value.</h2><p data-en="KAYAN is an independent CV review experience designed to help candidates understand how their CV communicates their experience and where it can be stronger. Powered by Mohamed Mokhtar." data-ar="كيان تجربة مستقلة لمراجعة السيرة الذاتية، تساعد المرشحين على فهم طريقة عرض خبراتهم وتحديد الجوانب التي يمكن تحسينها. KAYAN مستقلة – Powered by Mohamed Mokhtar.">KAYAN is an independent CV review experience designed to help candidates understand how their CV communicates their experience and where it can be stronger. Powered by Mohamed Mokhtar.</p></div><div style="display:flex;flex-direction:column;gap:10px"><a class="btn btn-gold" href="https://kayancv.com" target="_blank" rel="noopener" data-en="Try KAYAN Free ↗" data-ar="جرّب KAYAN مجاناً ↗">Try KAYAN Free ↗</a><a class="btn btn-dark wa-link" href="#" data-en="Ask About KAYAN ↗" data-ar="استفسر عن KAYAN ↗">Ask About KAYAN ↗</a></div></div>
 </div></section>
@@ -98,6 +161,80 @@ document.querySelectorAll("#navLinks a").forEach(a=>a.addEventListener("click",(
 function setWa(){document.querySelectorAll(".wa-link").forEach(a=>{a.href="https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(messages[currentLang]);a.target="_blank";a.rel="noopener";});}
 setWa();document.getElementById("langBtn").addEventListener("click",setWa);
 document.getElementById("year").textContent=new Date().getFullYear();
+(function(){
+var Q=[
+{en:"When a new project starts, I usually…",ar:"عند بداية مشروع جديد، عادةً…",o:{D:["take charge and set the goal","أتولى القيادة وأحدد الهدف"],I:["get people excited about it","أحمّس الفريق للفكرة"],S:["make sure everyone is comfortable with the plan","أتأكد إن الجميع مرتاح للخطة"],C:["study the details and requirements first","أدرس التفاصيل والمتطلبات أولاً"]}},
+{en:"People who know me would describe me as…",ar:"اللي يعرفوني يوصفوني بأني…",o:{D:["direct and decisive","مباشر وحاسم"],I:["friendly and talkative","اجتماعي وكثير الكلام"],S:["calm and dependable","هادئ ويُعتمد عليه"],C:["precise and organised","دقيق ومنظم"]}},
+{en:"Under pressure, I tend to…",ar:"تحت الضغط، أميل إلى…",o:{D:["push harder to get results","أضغط أكثر للوصول للنتيجة"],I:["talk it through with others","أتكلم عنه مع الآخرين"],S:["stay patient and keep going steadily","أصبر وأستمر بثبات"],C:["double-check everything","أراجع كل شيء مرتين"]}},
+{en:"In a meeting, I am most likely to…",ar:"في الاجتماعات، غالباً…",o:{D:["push for a decision","أدفع لاتخاذ قرار"],I:["share ideas and energy","أطرح أفكار وأضيف حماس"],S:["listen and support others","أستمع وأدعم الآخرين"],C:["ask questions about the facts","أسأل عن الحقائق والأرقام"]}},
+{en:"What motivates me most is…",ar:"أكثر شيء يحفزني هو…",o:{D:["winning and achieving challenges","الإنجاز والتغلب على التحديات"],I:["recognition and working with people","التقدير والعمل مع الناس"],S:["stability and a supportive team","الاستقرار وفريق متعاون"],C:["doing things correctly and with quality","إنجاز العمل بشكل صحيح وبجودة"]}},
+{en:"When I make a decision, I…",ar:"عندما أتخذ قراراً…",o:{D:["decide quickly and move on","أقرر بسرعة وأكمل"],I:["follow my instinct and enthusiasm","أتبع إحساسي وحماسي"],S:["take my time and consider others","آخذ وقتي وأراعي الآخرين"],C:["analyse all the options carefully","أحلل كل الخيارات بعناية"]}},
+{en:"What frustrates me most at work is…",ar:"أكثر ما يزعجني في العمل…",o:{D:["slow progress and wasted time","البطء وضياع الوقت"],I:["being ignored or working alone too long","التجاهل أو العمل وحدي لفترة طويلة"],S:["sudden changes and conflict","التغيير المفاجئ والخلافات"],C:["mistakes and unclear instructions","الأخطاء والتعليمات غير الواضحة"]}},
+{en:"My ideal work environment is…",ar:"بيئة العمل المثالية لي…",o:{D:["fast-paced with clear targets","سريعة وفيها أهداف واضحة"],I:["social, creative and fun","اجتماعية ومبدعة وممتعة"],S:["friendly, calm and predictable","ودية وهادئة ومستقرة"],C:["structured with clear standards","منظمة وفيها معايير واضحة"]}},
+{en:"When there is a disagreement, I…",ar:"عند حدوث خلاف…",o:{D:["say my opinion openly and firmly","أقول رأيي بوضوح وحزم"],I:["try to lighten the mood and persuade","أحاول ألطف الجو وأقنع"],S:["look for a compromise that keeps peace","أبحث عن حل وسط يحافظ على الهدوء"],C:["refer to facts and logic","أرجع للحقائق والمنطق"]}},
+{en:"I'm at my best when I…",ar:"أكون في أفضل حالاتي عندما…",o:{D:["lead and solve big problems","أقود وأحل مشاكل كبيرة"],I:["present, network and inspire","أعرض وأتواصل وألهم الآخرين"],S:["help and support a team","أساعد وأدعم فريق"],C:["plan, analyse and perfect the work","أخطط وأحلل وأتقن العمل"]}},
+{en:"When learning something new, I prefer…",ar:"عند تعلم شيء جديد أفضّل…",o:{D:["jumping in and figuring it out","أبدأ مباشرة وأتعلم بالتجربة"],I:["learning with a group","التعلم مع مجموعة"],S:["step-by-step guidance","إرشاد خطوة بخطوة"],C:["reading and understanding it deeply","القراءة والفهم بعمق"]}},
+{en:"Others value me most for my…",ar:"الآخرون يقدرون فيّ أكثر…",o:{D:["confidence and drive","ثقتي واندفاعي"],I:["positivity and communication","إيجابيتي وتواصلي"],S:["loyalty and patience","وفائي وصبري"],C:["accuracy and expertise","دقتي وخبرتي"]}}
+];
+var P={
+D:{c:"#b4483a",en:["Dominance","Results-driven, direct and decisive."],ar:["الحسم (Dominance)","تركّز على النتائج، مباشر وحاسم."],
+ s:{en:["Takes initiative","Makes fast decisions","Thrives on challenges"],ar:["تبادر بسرعة","تتخذ قرارات سريعة","تتألق مع التحديات"]},
+ g:{en:["Can seem impatient","May overlook others' feelings","Risk of rushing details"],ar:["قد تبدو غير صبور","قد تتجاهل مشاعر الآخرين","قد تستعجل التفاصيل"]},
+ r:{en:["Management & leadership","Sales & business development","Entrepreneurship"],ar:["الإدارة والقيادة","المبيعات وتطوير الأعمال","ريادة الأعمال"]}},
+I:{c:"#c8a56a",en:["Influence","Enthusiastic, social and persuasive."],ar:["التأثير (Influence)","متحمس، اجتماعي ومقنع."],
+ s:{en:["Builds relationships easily","Motivates others","Creative communicator"],ar:["تبني علاقات بسهولة","تحفّز الآخرين","تتواصل بإبداع"]},
+ g:{en:["Can lose focus on details","May over-promise","Dislikes routine"],ar:["قد تفقد التركيز على التفاصيل","قد تَعِد بأكثر من اللازم","لا تحب الروتين"]},
+ r:{en:["Marketing & communications","Training & coaching","Customer-facing roles"],ar:["التسويق والاتصال","التدريب والكوتشنج","الأدوار المتعاملة مع العملاء"]}},
+S:{c:"#3f7d64",en:["Steadiness","Calm, loyal and supportive."],ar:["الثبات (Steadiness)","هادئ، وفي وداعم."],
+ s:{en:["Reliable team player","Great listener","Patient and consistent"],ar:["عضو فريق يُعتمد عليه","مستمع ممتاز","صبور ومستمر"]},
+ g:{en:["Resists sudden change","May avoid conflict","Hesitates to say no"],ar:["تقاوم التغيير المفاجئ","قد تتجنب المواجهة","تتردد في قول لا"]},
+ r:{en:["HR & people support","Operations & administration","Healthcare & education"],ar:["الموارد البشرية ودعم الموظفين","العمليات والإدارة","الصحة والتعليم"]}},
+C:{c:"#2f5597",en:["Conscientiousness","Analytical, precise and quality-focused."],ar:["الدقة (Conscientiousness)","تحليلي، دقيق ويهتم بالجودة."],
+ s:{en:["High-quality work","Strong analytical thinking","Organised and systematic"],ar:["عمل عالي الجودة","تفكير تحليلي قوي","منظم ومنهجي"]},
+ g:{en:["Can be overly self-critical","May over-analyse decisions","Slower with ambiguity"],ar:["قد تنتقد نفسك كثيراً","قد تبالغ في التحليل","تتأخر مع الغموض"]},
+ r:{en:["Finance & accounting","Engineering & IT","Data analysis & quality"],ar:["المالية والمحاسبة","الهندسة وتقنية المعلومات","تحليل البيانات والجودة"]}}
+};
+var ans=[],i=0,shuffles=[];
+Q.forEach(function(){var k=["D","I","S","C"];for(var j=k.length-1;j>0;j--){var r=Math.floor(Math.random()*(j+1));var t=k[j];k[j]=k[r];k[r]=t}shuffles.push(k)});
+function L(){return document.documentElement.lang==="ar"?"ar":"en"}
+var $=function(id){return document.getElementById(id)};
+function show(id){["discStart","discQuiz","discResult"].forEach(function(x){$(x).hidden=x!==id})}
+function renderQ(){
+  var l=L(),q=Q[i];
+  $("discCount").textContent=(l==="ar"?"سؤال ":"Question ")+(i+1)+" / "+Q.length;
+  $("discBar").style.width=(i/Q.length*100)+"%";
+  $("discQ").textContent=q[l];
+  var box=$("discOpts");box.innerHTML="";
+  shuffles[i].forEach(function(k){
+    var b=document.createElement("button");b.type="button";b.className="disc-opt"+(ans[i]===k?" sel":"");
+    b.textContent=q.o[k][l==="ar"?1:0];
+    b.onclick=function(){ans[i]=k;b.classList.add("sel");setTimeout(function(){if(i<Q.length-1){i++;renderQ()}else{result()}},220)};
+    box.appendChild(b);
+  });
+  $("discBack").disabled=i===0;
+}
+function scores(){var s={D:0,I:0,S:0,C:0};ans.forEach(function(a){s[a]++});return s}
+function result(stay){
+  show("discResult");var l=L(),s=scores(),order=["D","I","S","C"].sort(function(a,b){return s[b]-s[a]}),top=order[0],p=P[top];
+  $("discLetter").textContent=top;$("discLetter").style.background=p.c;
+  $("discName").textContent=p[l][0];$("discTag").textContent=p[l][1];
+  var bars=$("discBars");bars.innerHTML="";
+  ["D","I","S","C"].forEach(function(k){var pct=Math.round(s[k]/Q.length*100);
+    var row=document.createElement("div");row.className="disc-row";
+    row.innerHTML='<span>'+k+' · '+P[k][l][0].replace(/ \(.*\)/,"")+'</span><div class="disc-track"><i style="background:'+P[k].c+'"></i></div><em>'+pct+'%</em>';
+    bars.appendChild(row);setTimeout(function(){row.querySelector("i").style.width=pct+"%"},60)});
+  [["discStr","s"],["discGrow","g"],["discRoles","r"]].forEach(function(x){$(x[0]).innerHTML=p[x[1]][l].map(function(t){return"<li>"+t+"</li>"}).join("")});
+  var sec=order[1]&&s[order[1]]>0?order[1]:"";
+  var msg=l==="ar"?"مرحباً محمد، أكملت اختبار DISC على موقعك. نمطي الأساسي: "+top+(sec?" والثانوي: "+sec:"")+" (D "+s.D+" / I "+s.I+" / S "+s.S+" / C "+s.C+"). أرغب في مناقشة النتيجة."
+    :"Hi Mohamed, I completed the DISC test on your website. My primary style is "+top+(sec?", secondary "+sec:"")+" (D "+s.D+" / I "+s.I+" / S "+s.S+" / C "+s.C+"). I'd like to discuss my result.";
+  $("discWa").href="https://wa.me/971581115890?text="+encodeURIComponent(msg);
+  if(!stay)$("discResult").scrollIntoView({behavior:"smooth",block:"start"});
+}
+$("discGo").onclick=function(){i=0;ans=[];show("discQuiz");renderQ()};
+$("discBack").onclick=function(){if(i>0){i--;renderQ()}};
+$("discAgain").onclick=function(){i=0;ans=[];show("discQuiz");renderQ()};
+$("langBtn").addEventListener("click",function(){setTimeout(function(){if(!$("discQuiz").hidden)renderQ();else if(!$("discResult").hidden)result(true)},0)});
+})();
 </script>
 </body>
 </html>
