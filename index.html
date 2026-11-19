@@ -105,10 +105,10 @@
 .cvc-list li{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:12px 16px;font-size:15px}
 .cvc-note{font-size:12px;color:#97a3b6;margin-top:14px}
 .cvc-visual{background:linear-gradient(145deg,#182a45,#0c1728);border:1px solid rgba(200,165,106,.3);border-radius:28px;padding:28px}
-.cvc-levels{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:16px;direction:ltr}
+.cvc-levels{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:16px}
 .cvc-levels span{background:#f5c518;color:#1d2939;font-weight:800;font-size:11px;text-align:center;border-radius:8px;padding:9px 2px;text-transform:uppercase}
 .cvc-deck{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.cvc-card{direction:rtl;background:#fff;color:#1d2939;border:2px solid #f5c518;border-radius:12px;min-height:74px;display:grid;place-items:center;text-align:center;padding:10px;font-weight:800;font-size:14px;line-height:1.4;box-shadow:0 8px 18px rgba(0,0,0,.25);transition:.25s}
+.cvc-card{background:#fff;color:#1d2939;border:2px solid #f5c518;border-radius:12px;min-height:74px;display:grid;place-items:center;text-align:center;padding:10px;font-weight:800;font-size:14px;line-height:1.4;box-shadow:0 8px 18px rgba(0,0,0,.25);transition:.25s}
 .cvc-card:nth-child(odd){transform:rotate(-1.5deg)}.cvc-card:nth-child(even){transform:rotate(1.5deg)}
 .cvc-card:hover{transform:translateY(-4px) rotate(0)}
 .cvc-card.lock{background:repeating-linear-gradient(135deg,#eef0f4 0 8px,#e3e6ec 8px 16px);color:#667085;font-size:20px;filter:blur(.3px)}
@@ -280,14 +280,14 @@
     <p class="cvc-note" data-en="Available only as part of a paid coaching session. Contact me for details and pricing." data-ar="متاحة فقط ضمن جلسة كوتشنج مدفوعة. تواصل معي لمعرفة التفاصيل والأسعار.">Available only as part of a paid coaching session. Contact me for details and pricing.</p>
   </div>
   <div class="cvc-visual" aria-hidden="true">
-    <div class="cvc-levels"><span>Always</span><span>Often</span><span>Sometimes</span><span>Seldom</span><span>Never</span></div>
+    <div class="cvc-levels"><span data-en="Always" data-ar="دائماً">Always</span><span data-en="Often" data-ar="غالباً">Often</span><span data-en="Sometimes" data-ar="أحياناً">Sometimes</span><span data-en="Seldom" data-ar="نادراً">Seldom</span><span data-en="Never" data-ar="أبداً">Never</span></div>
     <div class="cvc-deck">
-      <div class="cvc-card c1">الاستقلال</div>
-      <div class="cvc-card c2">الأمان</div>
-      <div class="cvc-card c3">الإبداع</div>
-      <div class="cvc-card c4">التوازن بين الحياة والعمل</div>
-      <div class="cvc-card c5">مساعدة الآخرين</div>
-      <div class="cvc-card c6">التعلم السريع</div>
+      <div class="cvc-card c1" data-en="Independence" data-ar="الاستقلال">Independence</div>
+      <div class="cvc-card c2" data-en="Security" data-ar="الأمان">Security</div>
+      <div class="cvc-card c3" data-en="Creativity" data-ar="الإبداع">Creativity</div>
+      <div class="cvc-card c4" data-en="Work-Life Balance" data-ar="التوازن بين الحياة والعمل">Work-Life Balance</div>
+      <div class="cvc-card c5" data-en="Helping Others" data-ar="مساعدة الآخرين">Helping Others</div>
+      <div class="cvc-card c6" data-en="Fast Learning" data-ar="التعلم السريع">Fast Learning</div>
       <div class="cvc-card lock">🔒</div><div class="cvc-card lock">🔒</div><div class="cvc-card lock">🔒</div>
     </div>
     <div class="cvc-more"><b>+48</b> <span data-en="more cards in the session" data-ar="بطاقة أخرى داخل الجلسة">more cards in the session</span></div>
