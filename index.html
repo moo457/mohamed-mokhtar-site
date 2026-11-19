@@ -95,6 +95,26 @@
 .pov-sign{color:var(--gold);font:italic 18px Georgia,serif}
 @media(max-width:900px){.pov-story{grid-template-columns:1fr}.pov-trio,.pov-cards{grid-template-columns:1fr}}
 @media(max-width:640px){.pov-story,.pov-mission{padding:26px}.pov-mission{flex-direction:column}.pov-checks{grid-template-columns:1fr}.pov-arrow:before,.pov-arrow:after{display:none}.pov-bridge{flex-direction:column;gap:8px}.pov-trio{margin-bottom:40px}}
+.cvc{background:var(--navy);color:#fff}
+.cvc-wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.cvc-badge{display:inline-flex;gap:8px;align-items:center;background:rgba(200,165,106,.15);border:1px solid rgba(200,165,106,.5);color:var(--gold);border-radius:999px;padding:7px 14px;font-size:12px;font-weight:800;margin-bottom:16px}
+.cvc .kicker{color:var(--gold)}
+.cvc h2{font-size:clamp(30px,4vw,46px);line-height:1.15;letter-spacing:-.03em;margin:12px 0 14px}
+.cvc-copy>p{color:#c3ccda;font-size:16px;line-height:1.85}
+.cvc-list{list-style:none;padding:0;margin:22px 0 28px;display:grid;gap:10px}
+.cvc-list li{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:12px 16px;font-size:15px}
+.cvc-note{font-size:12px;color:#97a3b6;margin-top:14px}
+.cvc-visual{background:linear-gradient(145deg,#182a45,#0c1728);border:1px solid rgba(200,165,106,.3);border-radius:28px;padding:28px}
+.cvc-levels{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:16px;direction:ltr}
+.cvc-levels span{background:#f5c518;color:#1d2939;font-weight:800;font-size:11px;text-align:center;border-radius:8px;padding:9px 2px;text-transform:uppercase}
+.cvc-deck{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.cvc-card{direction:rtl;background:#fff;color:#1d2939;border:2px solid #f5c518;border-radius:12px;min-height:74px;display:grid;place-items:center;text-align:center;padding:10px;font-weight:800;font-size:14px;line-height:1.4;box-shadow:0 8px 18px rgba(0,0,0,.25);transition:.25s}
+.cvc-card:nth-child(odd){transform:rotate(-1.5deg)}.cvc-card:nth-child(even){transform:rotate(1.5deg)}
+.cvc-card:hover{transform:translateY(-4px) rotate(0)}
+.cvc-card.lock{background:repeating-linear-gradient(135deg,#eef0f4 0 8px,#e3e6ec 8px 16px);color:#667085;font-size:20px;filter:blur(.3px)}
+.cvc-more{text-align:center;margin-top:18px;color:#c3ccda;font-size:14px}.cvc-more b{color:var(--gold);font-size:22px}
+@media(max-width:900px){.cvc-wrap{grid-template-columns:1fr;gap:34px}}
+@media(max-width:640px){.cvc-visual{padding:18px}.cvc-card{font-size:12px;min-height:64px}.cvc-levels span{font-size:9px}}
 </style>
 </head>
 <body>
@@ -102,7 +122,7 @@
 <div class="nav-wrap"><nav class="container">
 <a class="brand" href="#home">MOHAMED MOKHTAR<span>CAREER COACH</span></a>
 <div class="nav-links" id="navLinks">
-<a href="#home" data-en="Home" data-ar="الرئيسية">Home</a><a href="#about" data-en="About" data-ar="من أنا">About</a><a href="#perspective" data-en="My View" data-ar="وجهة نظري">My View</a><a href="#services" data-en="Services" data-ar="الخدمات">Services</a><a href="#approach" data-en="My Approach" data-ar="منهجيتي">My Approach</a><a href="#disc" data-en="DISC Test" data-ar="اختبار DISC">DISC Test</a><a href="https://kayancv.com" target="_blank" rel="noopener" data-en="KAYAN ↗" data-ar="كيان ↗">KAYAN ↗</a><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
+<a href="#home" data-en="Home" data-ar="الرئيسية">Home</a><a href="#about" data-en="About" data-ar="من أنا">About</a><a href="#perspective" data-en="My View" data-ar="وجهة نظري">My View</a><a href="#services" data-en="Services" data-ar="الخدمات">Services</a><a href="#approach" data-en="My Approach" data-ar="منهجيتي">My Approach</a><a href="#disc" data-en="DISC Test" data-ar="اختبار DISC">DISC Test</a><a href="#values-cards" data-en="Values Cards" data-ar="بطاقات القيم">Values Cards</a><a href="https://kayancv.com" target="_blank" rel="noopener" data-en="KAYAN ↗" data-ar="كيان ↗">KAYAN ↗</a><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
 </div>
 <div class="nav-actions"><button class="lang-btn" id="langBtn" type="button">العربية</button><button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu">☰</button></div>
 </nav></div>
@@ -240,6 +260,37 @@
     </div>
     <div class="disc-actions"><a class="btn btn-gold" id="discWa" href="#" target="_blank" rel="noopener" data-en="Discuss my result with Mohamed ↗" data-ar="ناقش نتيجتي مع محمد ↗">Discuss my result with Mohamed ↗</a><button class="btn btn-ghost-dark" id="discAgain" type="button" data-en="Retake the test" data-ar="أعد الاختبار">Retake the test</button></div>
     <p class="disc-note" data-en="This is a short self-reflection tool based on the DISC model, not a certified assessment. Use it as a starting point for a coaching conversation." data-ar="هذه أداة قصيرة للتأمل الذاتي مبنية على نموذج DISC، وليست تقييماً معتمداً. استخدمها كبداية لجلسة كوتشنج.">This is a short self-reflection tool based on the DISC model, not a certified assessment. Use it as a starting point for a coaching conversation.</p>
+  </div>
+</div>
+</div></section>
+<section class="cvc" id="values-cards"><div class="container">
+<div class="cvc-wrap">
+  <div class="cvc-copy">
+    <div class="cvc-badge">🔒 <span data-en="Premium session" data-ar="جلسة مدفوعة">Premium session</span></div>
+    <div class="kicker" data-en="New coaching tool" data-ar="أداة كوتشنج جديدة">New coaching tool</div>
+    <h2 data-en="Career Values Cards 🃏" data-ar="بطاقات القيم المهنية 🃏">Career Values Cards 🃏</h2>
+    <p data-en="What really matters to you at work? In this guided session, you sort 54 career-value cards (like independence, security, creativity and work-life balance) into five levels, from “Always valued” to “Never valued”. Together we turn your top values into clear criteria for choosing your next role, company or career path." data-ar="ما الذي يهمك فعلاً في العمل؟ في هذه الجلسة الموجّهة ترتّب 54 بطاقة من القيم المهنية، مثل الاستقلال والأمان والإبداع والتوازن بين الحياة والعمل، على خمس مستويات من «مهم دائماً» إلى «غير مهم أبداً». ثم نحوّل أهم قيمك معاً إلى معايير واضحة لاختيار وظيفتك أو شركتك أو مسارك القادم.">What really matters to you at work? In this guided session, you sort 54 career-value cards (like independence, security, creativity and work-life balance) into five levels, from “Always valued” to “Never valued”. Together we turn your top values into clear criteria for choosing your next role, company or career path.</p>
+    <ul class="cvc-list">
+      <li data-en="🃏 54 Arabic career-value cards" data-ar="🃏 54 بطاقة قيم مهنية باللغة العربية">🃏 54 Arabic career-value cards</li>
+      <li data-en="🎯 Your top 5 career values, clearly ranked" data-ar="🎯 أهم 5 قيم مهنية لديك مرتبة بوضوح">🎯 Your top 5 career values, clearly ranked</li>
+      <li data-en="🧭 A personal decision guide for your next move" data-ar="🧭 دليل شخصي لاتخاذ قرارك المهني القادم">🧭 A personal decision guide for your next move</li>
+      <li data-en="💻 One-to-one, online or in person" data-ar="💻 جلسة فردية، أونلاين أو حضورياً">💻 One-to-one, online or in person</li>
+    </ul>
+    <a class="btn btn-gold" href="https://wa.me/971581115890?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%85%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AD%D8%AC%D8%B2%20%D8%AC%D9%84%D8%B3%D8%A9%20%D8%A8%D8%B7%D8%A7%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D9%82%D9%8A%D9%85%20%D8%A7%D9%84%D9%85%D9%87%D9%86%D9%8A%D8%A9%20%2F%20Hi%20Mohamed%2C%20I%27d%20like%20to%20book%20a%20Career%20Values%20Cards%20session." target="_blank" rel="noopener" data-en="Book this session ↗" data-ar="احجز هذه الجلسة ↗">Book this session ↗</a>
+    <p class="cvc-note" data-en="Available only as part of a paid coaching session. Contact me for details and pricing." data-ar="متاحة فقط ضمن جلسة كوتشنج مدفوعة. تواصل معي لمعرفة التفاصيل والأسعار.">Available only as part of a paid coaching session. Contact me for details and pricing.</p>
+  </div>
+  <div class="cvc-visual" aria-hidden="true">
+    <div class="cvc-levels"><span>Always</span><span>Often</span><span>Sometimes</span><span>Seldom</span><span>Never</span></div>
+    <div class="cvc-deck">
+      <div class="cvc-card c1">الاستقلال</div>
+      <div class="cvc-card c2">الأمان</div>
+      <div class="cvc-card c3">الإبداع</div>
+      <div class="cvc-card c4">التوازن بين الحياة والعمل</div>
+      <div class="cvc-card c5">مساعدة الآخرين</div>
+      <div class="cvc-card c6">التعلم السريع</div>
+      <div class="cvc-card lock">🔒</div><div class="cvc-card lock">🔒</div><div class="cvc-card lock">🔒</div>
+    </div>
+    <div class="cvc-more"><b>+48</b> <span data-en="more cards in the session" data-ar="بطاقة أخرى داخل الجلسة">more cards in the session</span></div>
   </div>
 </div>
 </div></section>
