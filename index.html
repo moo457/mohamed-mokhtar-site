@@ -48,6 +48,53 @@
 .btn-ghost-dark{background:transparent;border:1px solid var(--line);color:var(--navy)}
 .disc-note{font-size:12px;color:var(--muted);margin:18px 0 0}
 @media(max-width:640px){.disc-card{padding:24px}.disc-quads{grid-template-columns:repeat(2,1fr)}.disc-cols{grid-template-columns:1fr}.disc-row{grid-template-columns:110px 1fr 40px;font-size:13px}.disc-quiz h3{font-size:19px}}
+.pov{background:#fff}
+.pov h3{color:var(--navy);font-size:22px;margin:0 0 12px}
+.pov p{color:#5d6878;font-size:16px}
+.pov-hero{text-align:center;max-width:820px;margin:0 auto 50px}
+.pov-hero .kicker{display:inline-block}
+.pov-quote{position:relative;font-size:clamp(32px,4.4vw,52px);line-height:1.2;color:var(--navy);letter-spacing:-.03em;margin:16px 0 18px}
+.pov-mark{display:block;font:110px/0.6 Georgia,serif;color:var(--gold);height:44px}
+.pov-lead{font-size:18px!important;max-width:680px;margin:0 auto}
+.pov-story{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center;background:var(--cream);border-radius:28px;padding:40px;margin-bottom:24px}
+.pov-stats{display:grid;gap:14px}
+.pov-stats>div{display:grid;grid-template-columns:52px 1fr;grid-template-rows:auto auto;column-gap:14px;align-items:center;background:#fff;border-radius:18px;padding:14px 18px;border:1px solid var(--line)}
+.pov-stats .pov-ic{grid-row:span 2}
+.pov-stats b{color:var(--navy);font-size:20px;line-height:1.2}.pov-stats small{color:var(--muted);font-size:13px}
+.pov-ic{display:grid;place-items:center;width:52px;height:52px;border-radius:16px;background:#f4eee3;font-size:24px}
+.pov-ic.big{width:64px;height:64px;font-size:30px;border-radius:20px}
+.pov-story p{margin:0;font-size:17px;line-height:1.85}
+.pov-trio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:60px}
+.pov-pill{background:var(--navy);color:#fff;border-radius:24px;padding:30px;transition:.25s}
+.pov-pill:hover{transform:translateY(-5px)}
+.pov-pill .pov-ic{background:rgba(200,165,106,.18);margin-bottom:16px}
+.pov-pill h3{color:var(--gold);font-size:22px;margin:0 0 6px}.pov-pill p{color:#c3ccda;margin:0;font-size:15px}
+.pov-block{max-width:860px;margin:0 auto 54px}
+.pov-block p{line-height:1.85}
+.pov-gap{margin-bottom:50px}
+.pov-gap h3,.pov-gap .pov-sub{text-align:center;max-width:720px;margin-inline:auto}
+.pov-gap .pov-sub{margin-bottom:26px}
+.pov-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pov-card{border:1px solid var(--line);border-radius:22px;padding:26px;background:#fff;box-shadow:0 8px 24px rgba(16,29,50,.05)}
+.pov-card p{margin:14px 0 0;font-size:15px;color:var(--ink)}
+.pov-bridge{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;margin:10px 0 18px}
+.pov-q{display:flex;align-items:center;gap:12px;background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:14px 24px;font-size:18px;color:var(--navy)}
+.pov-q span{font-size:24px}
+.pov-arrow{display:flex;flex-direction:column;align-items:center;gap:4px;padding:0 10px;position:relative}
+.pov-arrow span{font-size:30px}.pov-arrow small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#a47d43;font-weight:800}
+.pov-arrow:before,.pov-arrow:after{content:"";position:absolute;top:22px;width:22px;border-top:2px dashed var(--gold)}
+.pov-arrow:before{inset-inline-end:100%}.pov-arrow:after{inset-inline-start:100%}
+.pov-bridge-text{text-align:center;max-width:760px;margin:0 auto 54px!important;line-height:1.85}
+.pov-checks{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:18px 0 20px}
+.pov-checks span{background:var(--cream);border-radius:16px;padding:16px 18px;font-weight:700;color:var(--navy);font-size:15px}
+.pov-mission{display:flex;gap:24px;align-items:flex-start;background:linear-gradient(120deg,var(--navy),#1d3557);color:#fff;border-radius:28px;padding:44px;position:relative;overflow:hidden}
+.pov-mission:after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(200,165,106,.25),transparent 70%);inset-inline-end:-80px;top:-120px}
+.pov-mission .pov-ic{background:rgba(200,165,106,.2);flex:none}
+.pov-mission p{color:#dbe2ec;font-size:17px;line-height:1.85;margin:10px 0 14px;position:relative;z-index:1}
+.pov-mission .kicker{color:var(--gold)}
+.pov-sign{color:var(--gold);font:italic 18px Georgia,serif}
+@media(max-width:900px){.pov-story{grid-template-columns:1fr}.pov-trio,.pov-cards{grid-template-columns:1fr}}
+@media(max-width:640px){.pov-story,.pov-mission{padding:26px}.pov-mission{flex-direction:column}.pov-checks{grid-template-columns:1fr}.pov-arrow:before,.pov-arrow:after{display:none}.pov-bridge{flex-direction:column;gap:8px}.pov-trio{margin-bottom:40px}}
 </style>
 </head>
 <body>
@@ -55,7 +102,7 @@
 <div class="nav-wrap"><nav class="container">
 <a class="brand" href="#home">MOHAMED MOKHTAR<span>CAREER COACH</span></a>
 <div class="nav-links" id="navLinks">
-<a href="#home" data-en="Home" data-ar="الرئيسية">Home</a><a href="#about" data-en="About" data-ar="من أنا">About</a><a href="#services" data-en="Services" data-ar="الخدمات">Services</a><a href="#approach" data-en="My Approach" data-ar="منهجيتي">My Approach</a><a href="#disc" data-en="DISC Test" data-ar="اختبار DISC">DISC Test</a><a href="https://kayancv.com" target="_blank" rel="noopener" data-en="KAYAN ↗" data-ar="كيان ↗">KAYAN ↗</a><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
+<a href="#home" data-en="Home" data-ar="الرئيسية">Home</a><a href="#about" data-en="About" data-ar="من أنا">About</a><a href="#perspective" data-en="My View" data-ar="وجهة نظري">My View</a><a href="#services" data-en="Services" data-ar="الخدمات">Services</a><a href="#approach" data-en="My Approach" data-ar="منهجيتي">My Approach</a><a href="#disc" data-en="DISC Test" data-ar="اختبار DISC">DISC Test</a><a href="https://kayancv.com" target="_blank" rel="noopener" data-en="KAYAN ↗" data-ar="كيان ↗">KAYAN ↗</a><a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
 </div>
 <div class="nav-actions"><button class="lang-btn" id="langBtn" type="button">العربية</button><button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu">☰</button></div>
 </nav></div>
@@ -94,6 +141,70 @@
 <div class="credentials"><span class="credential">ICF ACC</span><span class="credential" data-en="HR Professional" data-ar="متخصص موارد بشرية">HR Professional</span><span class="credential" data-en="Training & Development" data-ar="التدريب والتطوير">Training & Development</span><span class="credential" data-en="Local &amp; Global Markets" data-ar="أسواق العمل المحلية والعالمية">Local &amp; Global Markets</span></div>
 <a class="btn btn-dark wa-link" href="#" data-en="Let's Talk About Your Goals ↗" data-ar="لنتحدث عن أهدافك ↗">Let's Talk About Your Goals ↗</a>
 </div></div></section>
+<section class="pov" id="perspective"><div class="container">
+<div class="pov-hero">
+  <div class="kicker" data-en="My perspective" data-ar="وجهة نظري">My perspective</div>
+  <h2 class="pov-quote"><span class="pov-mark">“</span><span data-en="A job isn't the goal… it's the result. 🎯" data-ar="الوظيفة ليست الهدف… بل هي نتيجة. 🎯">A job isn't the goal… it's the result. 🎯</span></h2>
+  <p class="pov-lead" data-en="And that result only comes when a person has inner clarity, confidence in their abilities, and a path they know exactly where it leads." data-ar="والنتيجة لا تتحقق إلا عندما يمتلك الإنسان وضوحًا داخليًا، وثقة في قدراته، ومسارًا يعرف جيدًا إلى أين يقوده.">And that result only comes when a person has inner clarity, confidence in their abilities, and a path they know exactly where it leads.</p>
+</div>
+
+<div class="pov-story">
+  <div class="pov-stats">
+    <div><span class="pov-ic">📄</span><b data-en="Thousands" data-ar="آلاف">Thousands</b><small data-en="of CVs reviewed" data-ar="السير الذاتية">of CVs reviewed</small></div>
+    <div><span class="pov-ic">🤝</span><b data-en="Hundreds" data-ar="مئات">Hundreds</b><small data-en="of interviews" data-ar="المقابلات">of interviews</small></div>
+    <div><span class="pov-ic">📖</span><b data-en="Dozens" data-ar="عشرات">Dozens</b><small data-en="of unfinished career stories" data-ar="القصص المهنية التي لم تكتمل">of unfinished career stories</small></div>
+  </div>
+  <p data-en="Through my journey in HR and professional training, I came to one important truth: people don't just need a job… they need clarity, confidence and a plan. A job can be gained today and lost tomorrow, but clarity tells you who you are and where you want to go, and it builds the confidence to grow your career step by step." data-ar="خلال رحلتي في مجال الموارد البشرية والتدريب المهني، أدركت حقيقة واحدة مهمّة: الناس لا تحتاج فقط إلى وظيفة… بل تحتاج إلى وضوح وثقة وخطة. فالوظيفة قد تحصل عليها اليوم وتتركها غدًا، أمّا الوضوح فهو ما يجعلك تعرف من أنت وما الذي تريد الوصول إليه، وهو ما يولّد داخلك الثقة التي تبني بها مستقبلك المهني خطوة بعد خطوة.">Through my journey in HR and professional training, I came to one important truth: people don't just need a job… they need clarity, confidence and a plan. A job can be gained today and lost tomorrow, but clarity tells you who you are and where you want to go, and it builds the confidence to grow your career step by step.</p>
+</div>
+
+<div class="pov-trio">
+  <div class="pov-pill"><span class="pov-ic big">🧭</span><h3 data-en="Clarity" data-ar="الوضوح">Clarity</h3><p data-en="Know who you are and what you want." data-ar="أن تعرف من أنت وماذا تريد.">Know who you are and what you want.</p></div>
+  <div class="pov-pill"><span class="pov-ic big">💪</span><h3 data-en="Confidence" data-ar="الثقة">Confidence</h3><p data-en="Believe in your abilities and show them." data-ar="أن تؤمن بقدراتك وتعرف كيف تُظهرها.">Believe in your abilities and show them.</p></div>
+  <div class="pov-pill"><span class="pov-ic big">🗺️</span><h3 data-en="A Plan" data-ar="الخطة">A Plan</h3><p data-en="A path that leads you, step by step." data-ar="مسار يقودك خطوة بخطوة.">A path that leads you, step by step.</p></div>
+</div>
+
+<div class="pov-block">
+  <h3 data-en="A career is a journey of awareness 🌱" data-ar="المسار المهني رحلة وعي 🌱">A career is a journey of awareness 🌱</h3>
+  <p data-en="In a world where jobs and skills change faster than we imagine, a career is no longer about picking the right job. It's a journey that starts with knowing yourself and ends with making an impact. That's where my real passion for career coaching began: not to point people to a “job”, but to help them build a “path” that fits them, reflects their values and lets them make the right career decisions." data-ar="في عالم تتغير فيه الوظائف والمهارات أسرع مما نتخيل، لم يعد المسار المهني مجرد اختيار وظيفة مناسبة، بل رحلة وعي تبدأ من معرفة الذات وتنتهي بتحقيق الأثر. ومن هنا بدأ شغفي الحقيقي بالكوتشنغ المهني؛ لم يكن هدفي أن أدلّ الناس على «وظيفة»، بل أن أساعدهم على بناء «مسار» يشبههم، ويعبّر عن قيمهم، ويمنحهم القدرة على اتخاذ قرارات مهنية صحيحة.">In a world where jobs and skills change faster than we imagine, a career is no longer about picking the right job. It's a journey that starts with knowing yourself and ends with making an impact. That's where my real passion for career coaching began: not to point people to a “job”, but to help them build a “path” that fits them, reflects their values and lets them make the right career decisions.</p>
+</div>
+
+<div class="pov-gap">
+  <h3 data-en="The gap I see every day 🔍" data-ar="الفجوة التي أراها كل يوم 🔍">The gap I see every day 🔍</h3>
+  <p class="pov-sub" data-en="In my sessions with graduates and professionals, I see a big gap between what people want and what the job market expects:" data-ar="من خلال جلساتي مع الخريجين والمهنيين، لاحظت فجوة كبيرة بين ما يريده الفرد وما يتوقعه سوق العمل:">In my sessions with graduates and professionals, I see a big gap between what people want and what the job market expects:</p>
+  <div class="pov-cards">
+    <div class="pov-card"><span class="pov-ic">🎤</span><p data-en="Some have strong skills but don't know how to present themselves." data-ar="البعض يملك مهارات قوية لكنه لا يعرف كيف يعرض نفسه.">Some have strong skills but don't know how to present themselves.</p></div>
+    <div class="pov-card"><span class="pov-ic">✨</span><p data-en="Some have big dreams but are missing the compass to guide them." data-ar="البعض لديه أحلام كبيرة لكنه يفتقد البوصلة التي توجهه.">Some have big dreams but are missing the compass to guide them.</p></div>
+    <div class="pov-card"><span class="pov-ic">🔄</span><p data-en="Others move from job to job without understanding why they never feel fulfilled." data-ar="وآخرون يتنقلون بين وظائف متعددة دون أن يفهموا لماذا لا يشعرون بالرضا.">Others move from job to job without understanding why they never feel fulfilled.</p></div>
+  </div>
+</div>
+
+<div class="pov-bridge">
+  <div class="pov-q"><span>🙋</span><b data-en="Who am I?" data-ar="من أنا؟">Who am I?</b></div>
+  <div class="pov-arrow"><span>🌉</span><small>Career Coaching</small></div>
+  <div class="pov-q"><span>🎯</span><b data-en="Where am I heading?" data-ar="إلى أين أتجه؟">Where am I heading?</b></div>
+</div>
+<p class="pov-bridge-text" data-en="Career coaching is the bridge between the two. It isn't a quick consultation or ready-made advice. It's a deep process that helps you discover your strengths, set your career priorities and strengthen your personal brand in a competitive market." data-ar="وهنا يأتي دور الـ Career Coaching كجسر يربط بين السؤالين. هو ليس استشارة سريعة أو نصائح جاهزة، بل عملية عميقة تساعدك على اكتشاف نقاط قوتك، وتحديد أولوياتك المهنية، وتقوية علامتك الشخصية في سوق تنافسي.">Career coaching is the bridge between the two. It isn't a quick consultation or ready-made advice. It's a deep process that helps you discover your strengths, set your career priorities and strengthen your personal brand in a competitive market.</p>
+
+<div class="pov-block">
+  <h3 data-en="When you understand yourself… ✅" data-ar="عندما تفهم ذاتك جيدًا… ✅">When you understand yourself… ✅</h3>
+  <div class="pov-checks">
+    <span data-en="🏢 You choose the right environment" data-ar="🏢 تختار البيئة المناسبة">🏢 You choose the right environment</span>
+    <span data-en="🤝 You negotiate with confidence" data-ar="🤝 تتفاوض بثقة">🤝 You negotiate with confidence</span>
+    <span data-en="📈 You develop your skills smartly" data-ar="📈 تطوّر مهاراتك بذكاء">📈 You develop your skills smartly</span>
+    <span data-en="⭐ You stand out in your path" data-ar="⭐ تتميّز في مسارك">⭐ You stand out in your path</span>
+  </div>
+  <p data-en="And when the picture is clear, decisions get easier, progress gets closer, and the future becomes more real and less foggy. ☀️" data-ar="وعندما تتضح الصورة، يصبح اتخاذ القرار أسهل، والتقدّم أقرب، والمستقبل أكثر واقعية وأقل ضبابية. ☀️">And when the picture is clear, decisions get easier, progress gets closer, and the future becomes more real and less foggy. ☀️</p>
+</div>
+
+<div class="pov-mission">
+  <span class="pov-ic big">🚀</span>
+  <div>
+    <div class="kicker" data-en="My mission" data-ar="مهمتي">My mission</div>
+    <p data-en="To empower young people and professionals to build a career that truly fits them: one that respects their values, strengthens their abilities and raises their chances of success in a market that doesn't forgive the unprepared. That's why I share my experience: not to hand out ready-made answers, but to give people the tools to map their own way with confidence and awareness. 💡" data-ar="تمكين الشباب والمهنيين من بناء مسار مهني يناسبهم حقًا؛ مسار يحترم قيمهم، ويعزز قدراتهم، ويرفع فرصهم في النجاح في سوق لا يرحم غير الجاهزين. لذلك أشارك تجاربي وخبراتي، لا لأقدّم حلولًا جاهزة، بل لأمنح الآخرين الأدوات التي تساعدهم على رسم طريقهم بثقة ووعي. 💡">To empower young people and professionals to build a career that truly fits them: one that respects their values, strengthens their abilities and raises their chances of success in a market that doesn't forgive the unprepared. That's why I share my experience: not to hand out ready-made answers, but to give people the tools to map their own way with confidence and awareness. 💡</p>
+    <div class="pov-sign">— Mohamed Mokhtar</div>
+  </div>
+</div>
+</div></section>
 <section class="steps" id="approach"><div class="container">
 <div class="section-head"><div class="kicker" data-en="My coaching approach" data-ar="منهجيتي في الكوتشنج">My coaching approach</div><h2 data-en="From feeling stuck to moving with intention." data-ar="من الحيرة إلى التحرك بوعي.">From feeling stuck to moving with intention.</h2><p data-en="A thoughtful process that starts with you—not with a generic checklist." data-ar="عملية تبدأ منك أنت، وليس بقائمة نصائح عامة لا تناسب الجميع.">A thoughtful process that starts with you—not with a generic checklist.</p></div>
 <div class="steps-grid">
